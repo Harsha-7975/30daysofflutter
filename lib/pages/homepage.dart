@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -13,11 +12,11 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text("First Flutter App"),
+          title: Text("Catalog App"),
         ),
         body: Center(
           child: Container(
-            child: Text("Welcome to $days days of "+name),
+            child: Text("Welcome to $days days of "+name, style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
           ),
         ),
         drawer: Drawer(),
